@@ -15,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html dir="rtl" className="dark">
+      <body className="min-h-screen grid grid-rows-[80px_1fr_auto]  dark:bg-zinc-800 dark:text-base-content">
+        {children}
+      </body>
     </html>
   );
 }
